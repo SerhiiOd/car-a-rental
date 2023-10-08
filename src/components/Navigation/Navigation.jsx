@@ -1,4 +1,4 @@
-import { StyledLink } from '../Header/Header.styled';
+import { StyledLink, Nav } from '../Header/Header.styled';
 
 const Navigation = () => {
   return (
