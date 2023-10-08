@@ -1,16 +1,20 @@
+import { Routes, Route } from 'react-router-dom';
+import { lazy } from 'react';
+
+import Navigation from 'components/Navigation/Navigation';
+
+const Home = lazy(() => import('../../Pages/Home/Home'));
+const Catalog = lazy(() => import('../../Pages/Catalog/Catalog'));
+const Favorites = lazy(() => import('../../Pages/Favorites/Favorites'));
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      React homework template 1
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="catalog" element={<Catalog />} />
+        <Route path="favorites" element={<Favorites />} />
+      </Routes>
+    </>
   );
 };
