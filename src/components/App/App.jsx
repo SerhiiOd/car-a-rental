@@ -1,18 +1,26 @@
-import { Routes, Route } from 'react-router-dom';
-import { lazy } from 'react';
+import React, { lazy, Suspense } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
-const Home = lazy(() => import('../../Pages/Home/Home'));
-const Catalog = lazy(() => import('../../Pages/Catalog/Catalog'));
-const Favorites = lazy(() => import('../../Pages/Favorites/Favorites'));
+import SharedLayout from 'components/SharedLayout/SharedLayout';
 
-export const App = () => {
+const Home = lazy(() => import('../../pages/Home/Home'));
+const Catalog = lazy(() => import('../../pages/Catalog/Catalog'));
+const Favorites = lazy(() => import('../../pages/Favorites/Favorites'));
+
+const App = () => {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="catalog" element={<Catalog />} />
-        <Route path="favorites" element={<Favorites />} />
-      </Routes>
+      <SharedLayout />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </Suspense>
     </>
   );
 };
+
+export default App;

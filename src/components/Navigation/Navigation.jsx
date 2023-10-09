@@ -1,4 +1,4 @@
-import { StyledLink, Nav } from '../Header/Header.styled';
+import { StyledLink, Nav } from '../SharedLayout/SharedLayout.styled';
 
 const Navigation = () => {
   return (
