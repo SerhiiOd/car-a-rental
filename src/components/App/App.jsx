@@ -3,9 +3,9 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 
 import SharedLayout from 'components/SharedLayout/SharedLayout';
 
-const Home = lazy(() => import('../../pages/Home/Home'));
-const Catalog = lazy(() => import('../../pages/Catalog/Catalog'));
-const Favorites = lazy(() => import('../../pages/Favorites/Favorites'));
+const Home = lazy(() => import('../../pages/Home/Home.jsx'));
+const Catalog = lazy(() => import('../../pages/Catalog/Catalog.jsx'));
+const Favorites = lazy(() => import('../../pages/Favorites/Favorites.jsx'));
 
 const App = () => {
   return (
