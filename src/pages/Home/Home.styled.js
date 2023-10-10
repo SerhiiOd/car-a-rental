@@ -2,18 +2,12 @@ import styled from 'styled-components';
 import image from '../../images/home.jpeg';
 
 export const Container = styled.div`
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  top: 54px;
-
-  z-index: -1;
-
   margin: auto;
-  padding: 40px 20px 20px 20px;
-  max-width: auto;
+  padding: 40px 20px;
   min-height: 100vh;
   width: 97%;
 
@@ -24,11 +18,25 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  margin: 0;
+  padding: 5px;
+  border-radius: 10px;
+
+  color: #ffffff;
+  background-color: #000000;
+`;
+
+export const SubTitle = styled.h2`
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #000000;
+
   color: #ffffff;
 `;
 
-export const Section = styled.div``;
+export const Section = styled.div`
+  margin-bottom: 45px;
+`;
+
 export const SectionTitle = styled.div`
   display: flex;
   flex-direction: column;
@@ -36,6 +44,8 @@ export const SectionTitle = styled.div`
   align-items: center;
 
   padding: 25px;
+  margin-bottom: 45px;
+
   border-radius: 10px;
 
   backdrop-filter: blur(5px);
@@ -58,7 +68,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   width: 350px;
-  min-height: 175px;
+  min-height: 220px;
 
   padding: 25px;
   border-radius: 10px;
@@ -73,7 +83,9 @@ export const ListItem = styled.li`
 
 export const TitleItem = styled.h2`
   display: block;
-  font-weight: 500;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #000000;
 
   margin-bottom: 20px;
 
@@ -82,5 +94,16 @@ export const TitleItem = styled.h2`
 
 export const TextItem = styled.p`
   display: block;
-  color: #ffffff;
+  min-height: 160px;
+  padding: 5px;
+  border-radius: 10px;
+
+  color: #ffd700;
+  background-color: #000000;
+`;
+
+export const SectionCard = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

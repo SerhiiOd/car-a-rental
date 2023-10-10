@@ -4,20 +4,27 @@ import {
   Container,
   Section,
   Title,
+  SubTitle,
   List,
   ListItem,
   TitleItem,
   TextItem,
   SectionTitle,
+  SectionCard,
 } from './Home.styled';
+
+import HeaderHome from '../../components/Header/Header';
+import FooterHome from '../../components/Footer/Footer';
+import SliderCard from '../../components/Slider/SliderCard';
 
 const Home = () => {
   return (
     <>
+      <HeaderHome />
       <Container>
         <SectionTitle>
           <Title>Falcon Rental</Title>
-          <Title>Your reliable partner in the world of automobiles</Title>
+          <SubTitle>Your reliable partner in the world of automobiles</SubTitle>
         </SectionTitle>
 
         <Section>
@@ -66,7 +73,12 @@ const Home = () => {
             Rental cars provide access to leading car rental brands.
           </TitleItem>
         </SectionTitle>
+
+        <SectionCard>
+          <SliderCard />
+        </SectionCard>
       </Container>
+      <FooterHome />
     </>
   );
 };
