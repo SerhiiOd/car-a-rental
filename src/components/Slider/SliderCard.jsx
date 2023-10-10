@@ -41,7 +41,7 @@ const SliderCard = () => {
               {!advert.img ? (
                 <Img src={BackImage} width={335} />
               ) : (
-                <Img src={advert.img} alt={`${advert.make}`} width={335} />
+                <Img src={`${advert.img}`} alt={`${advert.make}`} width={335} />
               )}
               <InfoBlock>
                 <TitleCar>
