@@ -7,7 +7,7 @@ FALCON, we specialize in car rental and provide you access to a diverse fleet of
 vehicles to meet all your needs and preferences. Elevate your mobility and
 freedom by exploring our diverse fleet across Ukraine.
 
-<div align="center"><img src="./assets/slide-1.jpg" alt="Logo"></div>
+<div align="center"><img src="./assets/slide-1.jpg" alt="Logo" style="borderRadius: 25px"></div>
 
  <div align="center"><p><b>What We Do</b></p></div>
 
