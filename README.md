@@ -23,6 +23,8 @@ mission. Discover how our dedication to providing exceptional car rental
 services in Ukraine and our core values guide us in delivering the best possible
 experience to our customers.
 
+<div align="center"><img src="./assets/slide-3.jpg" alt="slide-1" style="width: 364px"></div>
+
 <div align="center"><p><b>Why Choose Us</b></p></div>
 
 Find out what distinguishes us from the rest. Learn about the compelling reasons
@@ -33,9 +35,13 @@ extraordinary.
 
 <div align="center"><p><b>Our Advantages</b></p></div>
 
-Free cancellation for most bookings. Over 75,000 rental locations worldwide. Our
-support service is ready to assist in over 40 languages. Rental cars provide
-access to leading car rental brands. Travel with comfort, confidence, and
-freedom with FALCON. Trust us, and we will make your journey in Ukraine
-unforgettable and enjoyable!
+<ul>
+<li>Free cancellation for most bookings.</li>
+<li>Over 75,000 rental locations worldwide.</li>
+<li>Our support service is ready to assist in over 40 languages.</li>
+<li>Rental cars provide access to leading car rental brands.</li>
+</ul>
+
+Travel with comfort, confidence, and freedom with FALCON. Trust us, and we will
+make your journey in Ukraine unforgettable and enjoyable!
 [Link to our website](https://serhiiod.github.io/car-a-rental/)
