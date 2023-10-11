@@ -1,4 +1,4 @@
-[Logo](/assets/logo.png)
+![](./assets/logo.png)
 
 About Us:
 
