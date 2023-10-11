@@ -11,10 +11,12 @@ import {
   TextItem,
   SectionTitle,
   SectionCard,
+  MoreBtn,
+  SectionBtn,
 } from './Home.styled';
 
-import HeaderHome from '../../components/Header/Header';
-import FooterHome from '../../components/Footer/Footer';
+import { HeaderHome } from '../../components/Header/Header';
+import { FooterHome } from '../../components/Footer/Footer';
 import SliderCard from '../../components/Slider/SliderCard';
 
 const Home = () => {
@@ -77,6 +79,10 @@ const Home = () => {
         <SectionCard>
           <SliderCard />
         </SectionCard>
+
+        <SectionBtn>
+          <MoreBtn to="/catalog">Learn more</MoreBtn>
+        </SectionBtn>
       </Container>
       <FooterHome />
     </>

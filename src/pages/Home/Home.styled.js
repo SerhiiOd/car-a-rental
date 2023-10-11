@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import image from '../../images/home.jpeg';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
@@ -106,4 +107,18 @@ export const SectionCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const SectionBtn = styled.div`
+  padding: 20px;
+`;
+
+export const MoreBtn = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 99px;
+  border-radius: 12px;
+  color: #ffffff;
+  background-color: rgb(255, 190, 118);
 `;

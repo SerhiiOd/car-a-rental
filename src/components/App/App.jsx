@@ -1,7 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import { LoadBlock } from './App.styled';
 
-// import SharedLayout from 'components/SharedLayout/SharedLayout';
+import Loader from '../Loader/Loader';
 
 const Home = lazy(() => import('../../pages/Home/Home'));
 const Catalog = lazy(() => import('../../pages/Catalog/Catalog'));
@@ -10,8 +11,13 @@ const Favorites = lazy(() => import('../../pages/Favorites/Favorites'));
 const App = () => {
   return (
     <>
-      {/* <SharedLayout /> */}
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <LoadBlock>
+            <Loader />
+          </LoadBlock>
+        }
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/catalog" element={<Catalog />} />

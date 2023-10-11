@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
-// *****HOME*****
-
 export const StyledFooterHome = styled.footer`
   display: flex;
   align-items: center;
 
-  padding: 20px;
+  padding: 20px 60px;
 
   background: rgb(255, 190, 118);
   background: linear-gradient(
@@ -18,6 +16,19 @@ export const StyledFooterHome = styled.footer`
     rgba(199, 106, 0, 0.9192051820728291) 80%,
     rgba(210, 121, 18, 0.9108018207282913) 100%
   );
+
+  &.footer-catalog {
+    background: rgb(113, 113, 113);
+    background: linear-gradient(
+      112deg,
+      rgba(113, 113, 113, 0.9136029411764706) 0%,
+      rgba(69, 67, 64, 0.9108018207282913) 20%,
+      rgba(60, 56, 51, 0.9108018207282913) 40%,
+      rgba(37, 34, 31, 0.9108018207282913) 60%,
+      rgba(34, 29, 24, 0.9192051820728291) 80%,
+      rgba(13, 10, 7, 0.9108018207282913) 100%
+    );
+  }
 `;
 
 export const ContactsBlock = styled.div`
@@ -70,7 +81,3 @@ export const FormInput = styled.input`
 
   border: 1px solid red;
 `;
-
-// *****Catalog*****
-
-// *****Favorites*****

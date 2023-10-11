@@ -15,12 +15,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import BackImage from '../../images/BackImg.png';
+import backImage from '../../images/back-img.png';
 
 const SliderCard = () => {
   const dispatch = useDispatch();
   const adverts = useSelector(getCars);
-  console.log(adverts);
 
   useEffect(() => {
     dispatch(fetchCars());
@@ -39,7 +38,7 @@ const SliderCard = () => {
           {adverts.map(advert => (
             <CardBlock key={advert.id}>
               {!advert.img ? (
-                <Img src={BackImage} width={335} />
+                <Img src={backImage} width={335} />
               ) : (
                 <Img src={`${advert.img}`} alt={`${advert.make}`} width={335} />
               )}

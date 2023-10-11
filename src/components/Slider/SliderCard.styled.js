@@ -6,6 +6,8 @@ export const Img = styled.img`
 
   margin-bottom: 10px;
   border-radius: 15px;
+
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 `;
 
 export const CardBlock = styled.div`

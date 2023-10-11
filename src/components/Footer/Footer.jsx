@@ -52,7 +52,7 @@ const FooterHome = () => {
 
         <FormBlock>
           <FormBtn type="submit">
-            <RiNotification2Fill />
+            <RiNotification2Fill style={{ marginRight: 3 }} />
             Follow
           </FormBtn>
           <FormInput />
@@ -62,4 +62,46 @@ const FooterHome = () => {
   );
 };
 
-export default FooterHome;
+const FooterCatalogFavorite = () => {
+  return (
+    <>
+      <StyledFooterHome className="footer-catalog">
+        <LinkLogo href="/car-a-rental">
+          <LogoCar src={logo} alt="Logo" />
+        </LinkLogo>
+
+        <ContactsBlock>
+          <ContactsList>
+            <ContactsItem>
+              <ContactsLink href="tel: +380730000000">
+                <RiPhoneFill />: +380730000000
+              </ContactsLink>
+            </ContactsItem>
+
+            <ContactsItem>
+              <ContactsLink href="mailto: rental.car@drive.com">
+                <RiMailFill />: rental.car@drive.com
+              </ContactsLink>
+            </ContactsItem>
+
+            <ContactsItem>
+              <ContactsLink>
+                <RiMapPinFill />: Fantasy Street, 123 Odessa, Ukraine
+              </ContactsLink>
+            </ContactsItem>
+          </ContactsList>
+        </ContactsBlock>
+
+        <FormBlock>
+          <FormBtn type="submit">
+            <RiNotification2Fill style={{ marginRight: 3 }} />
+            Follow
+          </FormBtn>
+          <FormInput />
+        </FormBlock>
+      </StyledFooterHome>
+    </>
+  );
+};
+
+export { FooterHome, FooterCatalogFavorite };
