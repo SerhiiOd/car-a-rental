@@ -1,4 +1,4 @@
-![](./assets/logo.png)
+<div align="center"><img src="./assets/logo.png" alt="Logo"></div>
 
 About Us:
 
